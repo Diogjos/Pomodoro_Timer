@@ -1,11 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
-<body>
-    <h1>aqui vai ser a home</h1>
+<body> 
+    <nav style="display: flex; justify-content: space-around;background-color:#DCDCDC;border-radius: 10px;"> 
+        <a id="home" href="Home.html" style="margin:25px;color: #363636; font-weight: bold;text-decoration: none;">Home</a>    
+        <a id="projeto" href="Projeto.html" style="margin:25px;color: #363636; font-weight: bold;text-decoration: none;">Projeto/Sobre Nós</a>    
+        <a id="contato" href="Contato.html" style="margin:25px;color: #363636; font-weight: bold;text-decoration: none;">Contato e Localização</a>    
+    </nav>
+    <section >
+        <div style="display: flex; justify-content: center ;">
+            <div style="text-align: center;">
+                <h1>Pomodoro</h1>
+            </div>
+            <div style="width: 600px; justify-content: space-around;">
+                <header style="text-align: center;">
+                    <h2>Timer</h2>
+                    <div id="timer" style="font-size: 4rem;"></div>
+                    <div>
+                        <button id="start_stop" style="width: 90px;height: 45px;font-size: 3ch;margin: 5px;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;"></button>
+                        <button style="width: 90px;height: 45px;font-size: 3ch;margin: 5px;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;">Reset</button>
+                    </div>
+                </header>
+                <footer style="display: flex; flex-direction: row; justify-content: space-around; margin: 25px;">
+                    <div>
+                        <h3 style="text-align: center;">Atividade</h3>
+                        <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                            <button style="width: 25px; height: 25px; margin: 10px; font-size: large;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;">-</button>
+                            <p id="ajuste_atividade"></p>
+                            <button style="width: 25px; height: 25px; margin: 10px; font-size: large;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;">+</button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="text-align: center;">Pausa</h3>
+                        <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                            <button style="width: 25px; height: 25px; margin: 10px; font-size: large;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;">-</button>
+                            <p id="ajuste_pausa"></p>
+                            <button style="width: 25px; height: 25px; margin: 10px; font-size: large;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;">+</button>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <script src="Script.js"></script>
 </body>
 </html>
