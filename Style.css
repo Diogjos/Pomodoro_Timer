@@ -1,3 +1,14 @@
 body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+
+
+.timer {
+    font-size: 4rem;
+    display: inline;
+}
+
+#pause, #continue {
+    display: none;
+
+}

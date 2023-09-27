@@ -18,27 +18,32 @@
                 <header style="text-align: center;">
                     <h1>Pomodoro</h1>
                     <h2>Timer</h2>
-                    <div id="timer" style="font-size: 4rem;"></div>
+                    <div class="timer" id="minutos"></div>
+                    <div class="timer" id="separador">:</div>
+                    <div class="timer" id="segundos">00</div>
                     <div>
-                        <button id="start_stop" style="width: 90px;height: 45px;font-size: 3ch;margin: 5px;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;"></button>
-                        <button style="width: 90px;height: 45px;font-size: 3ch;margin: 5px;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;">Reset</button>
+                        <button class="btn" id="start" onclick="contador(ajuste_atividade)" style="width: 90px;height: 45px;font-size: 3ch;margin: 5px;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;">Start</button>
+                        <button class="btn" id="reset" onclick="resetar()" style="width: 90px;height: 45px;font-size: 3ch;margin: 5px;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;">Reset</button>
+                        <button class="btn" id="continue" onclick="continuar()" style="width: 120px;height: 45px;font-size: 3ch;margin: 5px;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;">continue</button>
+                        <button class="btn" id="pause" onclick="pausar()" style="width: 90px;height: 45px;font-size: 3ch;margin: 5px;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;">pause</button>
+
                     </div>
                 </header>
                 <footer style="display: flex; flex-direction: row; justify-content: space-around; margin: 25px;">
                     <div>
-                        <h3 style="text-align: center;">Atividade</h3>
+                        <h3 onclick="atividade()" style="text-align: center;">Atividade</h3>
                         <div style="display: flex; flex-direction: row; justify-content: space-around;">
-                            <button style="width: 25px; height: 25px; margin: 10px; font-size: large;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;">-</button>
-                            <p id="ajuste_atividade"></p>
-                            <button style="width: 25px; height: 25px; margin: 10px; font-size: large;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;">+</button>
+                            <button onclick="dmnAtv()" style="width: 25px; height: 25px; margin: 10px; font-size: large;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;">-</button>
+                            <p id="ajuste_atividade"></p><p id="minA">min</p>
+                            <button onclick="aumAtv()" style="width: 25px; height: 25px; margin: 10px; font-size: large;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;">+</button>
                         </div>
                     </div>
                     <div>
-                        <h3 style="text-align: center;">Pausa</h3>
+                        <h3 onclick="descanso()" style="text-align: center;">Pausa</h3>
                         <div style="display: flex; flex-direction: row; justify-content: space-around;">
-                            <button style="width: 25px; height: 25px; margin: 10px; font-size: large;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;">-</button>
-                            <p id="ajuste_pausa"></p>
-                            <button style="width: 25px; height: 25px; margin: 10px; font-size: large;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;">+</button>
+                            <button onclick="dmnPause()" style="width: 25px; height: 25px; margin: 10px; font-size: large;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;">-</button>
+                            <p id="ajuste_pausa"></p><p id="minP">min</p>
+                            <button onclick="aumPause()" style="width: 25px; height: 25px; margin: 10px; font-size: large;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;">+</button>
                         </div>
                     </div>
                     <div>
