@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+    <nav style="display: flex; justify-content: space-around;background-color:#DCDCDC;border-radius: 10px;"> 
+        <a id="home" href="Home.html" style="margin:25px;color: #363636; font-weight: bold;text-decoration: none;">Home</a> 
+        <a id="ToDoList" href="ToDoList.html" style="margin:25px;color: #363636; font-weight: bold;text-decoration: none;">ToDoList</a>       
+        <a id="projeto" href="Projeto.html" style="margin:25px;color: #363636; font-weight: bold;text-decoration: none;">Projeto/Sobre Nós</a>    
+        <a id="contato" href="index.html" style="margin:25px;color: #363636; font-weight: bold;text-decoration: none;">Contato e Localização</a>    
+    </nav>
+    <section style="display: flex; justify-content: space-around; margin: 50px;">
+        <div style="margin: 25px; border: 4px outset ;width: 500px;height: 300px;box-sizing: border-box; text-align: center;border-radius: 10px;">
+            <div id="myDIV" class="header" >
+                <h2>My To Do List</h2>
+                <input type="text" id="myInput" placeholder="Title...">
+                <span onclick="newElement()" class="addBtn">Add</span>
+              </div>
+              
+              <ul id="myUL" style="cursor: grab;">
+                <li>Hit the gym</li>
+                <li class="checked">Pay bills</li>
+                <li>Meet George</li>
+                <li>Buy eggs</li>
+                <li>Read a book</li>
+                <li>Organize office</li>
+              </ul> 
+        </div>
+
+    </section>
+    <script src="Script.js"></script>
+
+</body>
+</html>

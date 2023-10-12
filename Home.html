@@ -8,7 +8,8 @@
 </head>
 <body> 
     <nav style="display: flex; justify-content: space-around;background-color:#DCDCDC;border-radius: 10px;"> 
-        <a id="home" href="Home.html" style="margin:25px;color: #363636; font-weight: bold;text-decoration: none;">Home</a>    
+        <a id="home" href="Home.html" style="margin:25px;color: #363636; font-weight: bold;text-decoration: none;">Home</a>
+        <a id="ToDoList" href="ToDoList.html" style="margin:25px;color: #363636; font-weight: bold;text-decoration: none;">ToDoList</a>           
         <a id="projeto" href="Projeto.html" style="margin:25px;color: #363636; font-weight: bold;text-decoration: none;">Projeto/Sobre Nós</a>    
         <a id="contato" href="index.html" style="margin:25px;color: #363636; font-weight: bold;text-decoration: none;">Contato e Localização</a>    
     </nav>
@@ -31,7 +32,7 @@
                 </header>
                 <footer style="display: flex; flex-direction: row; justify-content: space-around; margin: 25px;">
                     <div>
-                        <h3 onclick="atividade()" style="text-align: center;">Atividade</h3>
+                        <h3 onclick="atividade()" style="text-align: center; border: 2px outset;border-radius: 5px;">Atividade</h3>
                         <div style="display: flex; flex-direction: row; justify-content: space-around;">
                             <button onclick="dmnAtv()" style="width: 25px; height: 25px; margin: 10px; font-size: large;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;">-</button>
                             <p id="ajuste_atividade"></p><p id="minA">min</p>
@@ -39,7 +40,7 @@
                         </div>
                     </div>
                     <div>
-                        <h3 onclick="descanso()" style="text-align: center;">Pausa</h3>
+                        <h3 onclick="descanso()" style="text-align: center; border: 2px outset;border-radius: 5px;">Pausa</h3>
                         <div style="display: flex; flex-direction: row; justify-content: space-around;">
                             <button onclick="dmnPause()" style="width: 25px; height: 25px; margin: 10px; font-size: large;border-color:#1C1C1C #363636 #4F4F4F #000000;border-radius: 10px;color: black;">-</button>
                             <p id="ajuste_pausa"></p><p id="minP">min</p>
