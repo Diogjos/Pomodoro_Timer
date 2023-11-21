@@ -20,5 +20,9 @@
 
   IDE : VisualStudioCode
 
+  Back End : NodeJs
+
+  # Dominio
+
 
 ### https://pomodro-pi.vercel.app/Home.html
